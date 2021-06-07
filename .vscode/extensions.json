@@ -1,0 +1,14 @@
+{
+    "recommendations": [
+        "pkief.material-icon-theme",
+        "hookyqr.beautify",
+        "formulahendry.code-runner",
+        "msjsdiag.debugger-for-chrome",
+        "dracula-theme.theme-dracula",
+        "dbaeumer.vscode-eslint",
+        "xabikos.javascriptsnippets",
+        "ritwickdey.liveserver",
+        "quicktype.quicktype",
+        "wallabyjs.quokka-vscode"
+    ]
+}
