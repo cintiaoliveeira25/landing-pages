@@ -1,17 +1,13 @@
-// função que vai selecionar qual função será executada
-
 export const mapSections = (sections = []) => {
-	return sections.map((section) => {
-		if (section.__component === 'section.section-two-columns') {
-			return mapSectionTwoColumns(section);
-
-		}
-		if (section.__component === 'section.section-content') {
-			return mapSectionContent(section);
-
-		}
-		if (section.__component === 'section.section-grid') {
-			const { text_grid = [], image_grid = [] } = section;
+  return sections.map((section) => {
+    if (section.__component === 'section.sections-two-columns') {
+      return mapSectionTwoColumns(section);
+    }
+    if (section.__component === 'section.section-content') {
+      return mapSectionContent(section);
+    }
+    if (section.__component === 'section.section-grid') {
+      const { text_grid = [], image_grid = [] } = section;
 
       if (text_grid.length > 0) {
         return mapTextGrid(section);
@@ -20,14 +16,14 @@ export const mapSections = (sections = []) => {
       if (image_grid.length > 0) {
         return mapImageGrid(section);
       }
-		}
+    }
 
-		return section
-	});
+    return section;
+  });
 };
 
 export const mapSectionTwoColumns = (section = {}) => {
-	const {
+  const {
     __component: component = '',
     title = '',
     description: text = '',
@@ -35,7 +31,7 @@ export const mapSectionTwoColumns = (section = {}) => {
     metadata: { background = false, section_id: sectionId = '' } = false,
   } = section;
 
-	return {
+  return {
     component,
     title,
     text,

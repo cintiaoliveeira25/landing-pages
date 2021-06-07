@@ -1,5 +1,5 @@
 import {
-	mapImageGrid,
+  mapImageGrid,
   mapSectionContent,
   mapSections,
   mapSectionTwoColumns,
@@ -14,39 +14,39 @@ describe('map-sections', () => {
     expect(data).toEqual([]);
   });
 
-	it('should render sections with correct data', () => {
+  it('should render sections with correct data', () => {
     const data = mapSections(pagesFakeData[0].sections);
-    expect(data[0].component).toBe('section.section-two-columns');
+    expect(data[0].component).toBe('section.sections-two-columns');
   });
 
-	it('should test section with invalid data', () => {
+  it('should test section with invalid data', () => {
     const withNoTextOrImageGrid = mapSections([
-			{
-				__component: 'section.section-grid',	
-			},
-		]);
+      {
+        __component: 'section.section-grid',
+      },
+    ]);
 
-		const withNoComponent = mapSections([{}]);
-		expect(withNoTextOrImageGrid).toEqual([
-			{ __component: 'section.section-grid' }
-		]);
-		expect(withNoComponent).toEqual([{}]);
+    const WithNoComponent = mapSections([{}]);
+    expect(withNoTextOrImageGrid).toEqual([
+      { __component: 'section.section-grid' },
+    ]);
+    expect(WithNoComponent).toEqual([{}]);
   });
 
-	it('should test section.section-grid with no text_grid or image_grid', () => {
+  it('should test section.section-grid with no text_grid or image_grid', () => {
     const withNoTextOrImageGrid = mapSections([
-			{
-				__component: 'section.section-grid',
-				image_grid: [{}],	
-			},
-			{
-				__component: 'section.section-grid',
-				text_grid: [{}],	
-			},
-		]);
-		expect(withNoTextOrImageGrid.length).toBe(2);
+      {
+        __component: 'section.section-grid',
+        image_grid: [{}],
+      },
+      {
+        __component: 'section.section-grid',
+        text_grid: [{}],
+      },
+    ]);
+    expect(withNoTextOrImageGrid.length).toBe(2);
   });
-	
+
   it('should map section two columns if data is empty', () => {
     const data = mapSectionTwoColumns();
     expect(data.background).toBe(false);
@@ -59,7 +59,7 @@ describe('map-sections', () => {
 
   it('should map section two columns with data', () => {
     const data = mapSectionTwoColumns({
-      __component: 'section.section-two-columns',
+      __component: 'section.sections-two-columns',
       title: 'title',
       description: 'abc',
       metadata: {
@@ -70,16 +70,15 @@ describe('map-sections', () => {
         url: 'a.svg',
       },
     });
-
     expect(data.background).toBe(true);
-    expect(data.component).toBe('section.section-two-columns');
+    expect(data.component).toBe('section.sections-two-columns');
     expect(data.sectionId).toBe('contact');
     expect(data.srcImg).toBe('a.svg');
     expect(data.text).toBe('abc');
     expect(data.title).toBe('title');
   });
 
-	it('should map section content with no data', () => {
+  it('should map section content with no data', () => {
     const data = mapSectionContent();
     expect(data.background).toBe(false);
     expect(data.component).toBe('');
@@ -98,7 +97,6 @@ describe('map-sections', () => {
         section_id: 'pricing',
       },
     });
-
     expect(data.background).toBe(false);
     expect(data.component).toBe('section.section-content');
     expect(data.sectionId).toBe('pricing');
@@ -127,7 +125,6 @@ describe('map-sections', () => {
         section_id: 'grid-one',
       },
     });
-
     expect(data.background).toBe(true);
     expect(data.component).toBe('section.section-grid-text');
     expect(data.sectionId).toBe('grid-one');
@@ -146,7 +143,7 @@ describe('map-sections', () => {
     expect(data.description).toBe('');
   });
 
-	it('should map grid image without data', () => {
+  it('should map grid image without data', () => {
     const data = mapImageGrid(undefined);
     expect(data.background).toBe(false);
     expect(data.component).toBe('section.section-grid-image');
@@ -155,7 +152,7 @@ describe('map-sections', () => {
     expect(data.description).toBe('');
   });
 
-	it('should map grid image with data', () => {
+  it('should map grid image with data', () => {
     const data = mapImageGrid({
       __component: 'section.section-grid',
       description: 'abc',
