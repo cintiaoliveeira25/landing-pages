@@ -1,6 +1,6 @@
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
-  url: 'http://localhost:1337/pages/?slug=',
+  url: 'https://strapi-landing-pages-project-3.herokuapp.com/pages/?slug=',
   siteName: 'Cíntia Oliveira',
   defaultSlug: 'landing-page',
 };
