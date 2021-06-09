@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import { useEffect, useState } from 'react';
 import { useLocation } from 'react-router-dom';
 
