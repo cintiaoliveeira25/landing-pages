@@ -9,8 +9,8 @@
 
 ## Sobre o projeto
 
-Existem algumas empresas que direcionam seus esforços apenas a atrair clientes para seus sites. A maioria desses visitantes acaba saindo da página sem se tornar um cliente. Aí é que entram as landing pages.
-Mas o que é uma landing page? Elas ossuem menos elementos que uma página tradicional e são inseridas nos sites com o objetivo específico de converter visitantes. A ideia é conseguir converter o usuário, incentivando-o a cumprir uma ação dentro do site. Em suma, o objetivo principal é fazer com que ele passe de um visitante a uma oportunidade de negócio. Em uma landing page, só há uma ação para ser realizada e o pouco conteúdo textual da página será estrategicamente escrito para convencer a efetuar essa ação.
+Existem algumas empresas que direcionam seus esforços apenas a atrair clientes para seus sites. A maioria desses visitantes acaba saindo da página sem se tornar um cliente. Aí é que entram as landing pages. Mas o que é uma landing page? <br />
+Elas possuem menos elementos que uma página tradicional e são inseridas nos sites com o objetivo específico de converter visitantes. A ideia é conseguir converter o usuário, incentivando-o a cumprir uma ação dentro do site. Em suma, o objetivo principal é fazer com que ele passe de um visitante a uma oportunidade de negócio. Em uma landing page, só há uma ação para ser realizada e o pouco conteúdo textual da página será estrategicamente escrito para convencer a efetuar essa ação.
 
 ## Tecnologias
 
