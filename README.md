@@ -19,6 +19,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - [React](https://reactjs.org)
 - [Storybook](https://storybook.js.org)
 - [Styled-Components](https://styled-components.com/)
+- [Teste Unitário com Jest](https://jestjs.io/)
 
 ## Como executar
 
